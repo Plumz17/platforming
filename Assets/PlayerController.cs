@@ -8,7 +8,7 @@
 // Jump Buffering
 // Clamped Fall Speed
 // (Edge Detection looks difficult, got no time for that)
-// Github page: https://github.com/Plumz17/platforming
+// Github page (if you want to try it out use version 6000.0.31f1): https://github.com/Plumz17/platforming
 
 using System;
 using UnityEngine;
@@ -23,18 +23,18 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float speed = 10f;
-    public float jumpForce = 10f;
-    public float lowJumpMultiplier = 1.5f; 
-    public float fallMultiplier = 2f; 
+    public float jumpForce = 15f;
+    public float lowJumpMultiplier = 2.5f; 
+    public float fallMultiplier = 3f; 
     public float maxFallSpeed = 20f; 
 
     [Header("Ground Settings")]
     public float groundCheckDistance = 1.1f;
     public LayerMask GroundLayer;
 
-    [Header("Coyote Time Settings")]
-    [SerializeField] private float coyoteTime = 0.2f;
-    [SerializeField] private float jumpBufferTime = 0.25f;
+    [Header("Coyote and Buffer Time Settings")]
+    [SerializeField] private float coyoteTime = 0.15f;
+    [SerializeField] private float jumpBufferTime = 0.15f;
 
 
     void Awake() {

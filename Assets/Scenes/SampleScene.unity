@@ -1118,8 +1118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 15
-  lowJumpMultiplier: 2.5
-  fallMultiplier: 3
+  lowJumpMultiplier: 1.5
+  fallMultiplier: 2
   maxFallSpeed: 20
   groundCheckDistance: 1.1
   GroundLayer:
