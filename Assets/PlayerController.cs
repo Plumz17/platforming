@@ -46,7 +46,6 @@ public class PlayerController : MonoBehaviour
         HandleJumping();
         CheckGround();
         ApplyVariableJump();
-        Debug.Log(rb.linearVelocityY);
     }
 
     void FixedUpdate() {
